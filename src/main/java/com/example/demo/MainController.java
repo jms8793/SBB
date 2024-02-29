@@ -13,4 +13,8 @@ public class MainController {
 		return "안녕하세요. 정민상입니다.";
 	}
 	
+	@GetMapping("/")
+	public String root() {
+		return "redirect:/question/list";
+	}
 }
